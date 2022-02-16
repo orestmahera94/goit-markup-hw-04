@@ -1,0 +1,403 @@
+:root {
+  --body-text-color: #212121;
+  --image-text-color: #757575;
+  --background-botton-color: #2196f3;
+  --white-color: #ffffff;
+  --footer-background-color: #2f303a;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+}
+body {
+  font-family: Roboto, Open-Sans;
+  font-weight: 400;
+  color: var(--body-text-color);
+}
+
+/* ---------------------------------------------Загальні----- */
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+header {
+  border-bottom: 1px solid #ececec;
+}
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.container-header {
+  display: flex;
+  align-items: center;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* ---------------------------------------------ВСЕ ДЛЯ ХЕДЕРА---- */
+.store-active {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--background-botton-color);
+}
+.header {
+  height: 80px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.15;
+}
+.headear-portfolio {
+  border: 1px solid #ececec;
+}
+.logo {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--body-text-color);
+  font-family: Raleway;
+}
+.all-logo {
+  margin-left: 0px;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.color-logo {
+  color: var(--background-botton-color);
+  font-family: Raleway;
+}
+.menu {
+  display: flex;
+}
+.menu li.header + li.header {
+  margin-left: 50px;
+}
+.menu-color {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--body-text-color);
+}
+.menu-color:hover,
+.menu-color:focus {
+  color: var(--background-botton-color);
+  -background-botton-color: var(--white-color);
+}
+
+/*-------------------------------------------- Меню для сторінки ПОРТФОЛІО */
+
+.menu-portfolio {
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: var(--image-text-color);
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: Roboto;
+  font-weight: 500;
+  background-color: #f5f4fa;
+}
+.menu-portfolio:hover,
+.menu-portfolio:focus {
+  color: var(--white-color);
+  background-color: var(--background-botton-color);
+}
+
+/* ----------------------------------------------КОНТАКТИ */
+.adress-header {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+.adress-header li.header + li.header {
+  margin-left: 50px;
+}
+.contacts {
+  color: var(--footer-contacts-color);
+}
+.contacts:hover,
+.contacts:focus {
+  color: var(--background-botton-color);
+  cursor: pointer;
+}
+.header-color-contacts {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: #757575;
+}
+.header-color-contacts:hover {
+  color: var(--background-botton-color);
+  cursor: pointer;
+}
+.header-color-contacts:focus {
+  color: var(--background-botton-color);
+  cursor: pointer;
+}
+
+/*-------------------------------------------- СЕКЦІЯ ГЕРОЙ */
+.hero {
+  background-color: var(--footer-background-color);
+  color: var(--white-color);
+
+  text-align: center;
+}
+.hero.section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.h1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+
+  text-align: center;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+
+.index-bottom {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-family: inherit;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  background-color: var(--background-botton-color);
+  color: var(--white-color);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.index-bottom:hover,
+.index-bottom:focus {
+  color: var(--body-text-color);
+  background-color: var(--background-botton-color);
+}
+/* ----------------------------------------------Що ми робимо index + porfolio */
+
+.what-we-do {
+  display: flex;
+}
+.item {
+  width: calc((100%-90px) / 4);
+  margin-right: 30px;
+}
+.item:nth-child(4n) {
+  margin-right: 0;
+}
+.index-smoll-text {
+  color: var(--image-text-color);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.title-h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+.our-work {
+  visibility: hidden;
+  height: 0;
+}
+
+/* --------------------------------------------------фото робочого процесу */
+.section-semples {
+  padding-top: 0;
+}
+.photo-work-proces {
+  display: flex;
+  flex-wrap: wrap;
+}
+.photo-item {
+  margin-right: 30px;
+}
+.photo-item:nth-child(3n) {
+  margin-right: 0;
+}
+.title-h2 {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* ---------------------------------------------------Наша команда */
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.person {
+  display: block;
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--white-color);
+}
+.person:nth-child(4n) {
+  margin-right: 0;
+}
+.person-info {
+  margin-top: 30px;
+  margin -bottom: 30px;
+}
+.team {
+  background: #f5f4fa;
+}
+.image-class {
+  width: 100%;
+}
+.name-workers {
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.profession-worker {
+  text-align: center;
+
+  color: var(--image-text-color);
+  font-size: 16px;
+  line-height: 1.18;
+}
+/* ----------------------------------------------Portfolio main */
+/* Кнопки на сторінці Portfolio */
+.botton-portfolio {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.list-botton-portfolio {
+  margin-right: 8px;
+}
+.list-botton-portfolio:last-child {
+  margin-right: 0;
+}
+/* Список наших проектів Portfolio */
+.our-progects {
+  display: flex;
+  flex-wrap: wrap;
+}
+.our-progects-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.our-progects-item:nth-child(3n) {
+  margin-right: 0px;
+}
+.our-progects-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+.name-progect {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+.image-portfolio {
+  width: 100%;
+}
+.big-text-image {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 700;
+}
+.small-text-image {
+  display: block;
+  color: var(--image-text-color);
+  font-size: 16px;
+  line-height: 1.8;
+}
+.active-botton {
+  color: var(--white-color);
+  background-color: var(--background-botton-color);
+}
+/* ---------------------------------------------ВСЕ ДЛЯ ФУТЕРА */
+.footer {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+}
+.footer:last-child {
+  margin: 0;
+}
+.footer-logo {
+  display: block;
+
+  margin-bottom: 20px;
+}
+.footer-color {
+  color: var(--white-color);
+}
+.footer-color:hover,
+.footer-color:focus {
+  color: var(--background-botton-color);
+}
+.footer-background-color {
+  background-color: var(--footer-background-color);
+}
+.back-color {
+  background-color: var(--background-botton-color);
+}
