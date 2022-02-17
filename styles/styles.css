@@ -5,6 +5,7 @@
   --white-color: #ffffff;
   --footer-background-color: #2f303a;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --icon-clients:rgba(175, 177, 184, 1);
 }
 
 body {
@@ -57,7 +58,7 @@ div.container-header {
   padding-bottom: 94px;
 }
 
-/* ---------------------------------------------ВСЕ ДЛЯ ХЕДЕРА---- */
+/* --------------------------------------------- ХЕДЕР---- */
 .store-active {
   display: block;
   padding-top: 32px;
@@ -113,7 +114,70 @@ div.container-header {
   color: var(--background-botton-color);
   -background-botton-color: var(--white-color);
 }
+.adress-header {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+.adress-header li.header + li.header {
+  margin-left: 50px;
+}
+.contacts {
+  color: var(--footer-contacts-color);
+}
+.contacts:hover,
+.contacts:focus {
+  color: var(--background-botton-color);
+  cursor: pointer;
+}
+.header-color-contacts {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+  color: #757575;
+}
+.heder-contacts{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.header-mail{
+  width: 20px;
+  height: 20px;
+}
+.header-mail:hover,
+.header-mail:focus{
+   fill: var(--background-botton-color);
+  cursor: pointer;
+}
 
+.heder-contacts:hover,
+.heder-contacts:active {
+  fill: var(--background-botton-color);
+  cursor: pointer;}
+
+  .header-icon-phone{
+  width: 20px;
+  height: 20px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.header-nomber{
+  margin-left: 10px;
+}
+.header-icon-phone:hover {
+  color: var(--background-botton-color);
+  cursor: pointer;
+}
+.header-color-contacts:hover {
+  color: var(--background-botton-color);
+  cursor: pointer;
+}
+.header-color-contacts:focus {
+  color: var(--background-botton-color);
+  cursor: pointer;
+}
 /*------------------------- Меню для сторінки ПОРТФОЛІО */
 
 .menu-portfolio {
@@ -134,39 +198,6 @@ div.container-header {
 .menu-portfolio:focus {
   color: var(--white-color);
   background-color: var(--background-botton-color);
-}
-
-/* -----------------------------------КОНТАКТИ */
-.adress-header {
-  display: flex;
-  flex-direction: row;
-  margin-left: auto;
-}
-.adress-header li.header + li.header {
-  margin-left: 50px;
-}
-.contacts {
-  color: var(--footer-contacts-color);
-}
-.contacts:hover,
-.contacts:focus {
-  color: var(--background-botton-color);
-  cursor: pointer;
-}
-.header-color-contacts {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  color: #757575;
-}
-.header-color-contacts:hover {
-  color: var(--background-botton-color);
-  cursor: pointer;
-}
-.header-color-contacts:focus {
-  color: var(--background-botton-color);
-  cursor: pointer;
 }
 
 /*---------------------------------------- СЕКЦІЯ ГЕРОЙ */
@@ -229,7 +260,7 @@ div.container-header {
   color: var(--body-text-color);
   background-color: var(--background-botton-color);
 }
-/* ----------------------------------------------Що ми робимо index + porfolio */
+/* -------------------------------------Що ми робимо index + porfolio */
 
 .what-we-do {
   display: flex;
@@ -259,7 +290,7 @@ div.container-header {
   height: 0;
 }
 
-/* --------------------------------------------------фото робочого процесу */
+/* ------------------------------------------фото робочого процесу */
 .section-semples {
   padding-top: 0;
 }
@@ -282,7 +313,7 @@ div.container-header {
   font-weight: 700;
 }
 
-/* ---------------------------------------------------Наша команда */
+/* -------------------------------------------Наша команда */
 .team-list {
   display: flex;
   flex-wrap: wrap;
@@ -322,7 +353,22 @@ div.container-header {
   font-size: 16px;
   line-height: 1.18;
 }
-/* ----------------------------------------------Portfolio main */
+/* ---------------------OUR CLIENTS */
+.clients-list{
+  display: flex;
+  flex-direction: row;
+ 
+}
+.clients-item{
+ 
+}
+.clients-icon-1{
+  width: 170px;
+  height: 92px;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* -----------------------------------Portfolio main */
 /* Кнопки на сторінці Portfolio */
 .botton-portfolio {
   display: flex;
@@ -335,7 +381,7 @@ div.container-header {
 .list-botton-portfolio:last-child {
   margin-right: 0;
 }
-/* Список наших проектів Portfolio */
+/*     ----------------------------------Список наших проектів Portfolio */
 .our-progects {
   display: flex;
   flex-wrap: wrap;
