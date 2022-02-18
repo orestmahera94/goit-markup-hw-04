@@ -5,7 +5,8 @@
   --white-color: #ffffff;
   --footer-background-color: #2f303a;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
-  --icon-clients:rgba(175, 177, 184, 1);
+  --icon-clients: rgba(175, 177, 184, 1);
+  --back-svg-color: #f5f4fa;
 }
 
 body {
@@ -137,33 +138,34 @@ div.container-header {
   align-items: center;
   color: #757575;
 }
-.heder-contacts{
+.heder-contacts {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.header-mail{
+.header-mail {
   width: 20px;
   height: 20px;
 }
 .header-mail:hover,
-.header-mail:focus{
-   fill: var(--background-botton-color);
+.header-mail:focus {
+  fill: var(--background-botton-color);
   cursor: pointer;
 }
 
 .heder-contacts:hover,
 .heder-contacts:active {
   fill: var(--background-botton-color);
-  cursor: pointer;}
+  cursor: pointer;
+}
 
-  .header-icon-phone{
+.header-icon-phone {
   width: 20px;
   height: 20px;
   margin-left: 0px;
   padding-left: 0px;
 }
-.header-nomber{
+.header-nomber {
   margin-left: 10px;
 }
 .header-icon-phone:hover {
@@ -202,11 +204,8 @@ div.container-header {
 
 /*---------------------------------------- СЕКЦІЯ ГЕРОЙ */
 .hero {
-
-  background-image: linear-gradient( to left,
-  rgba(47, 48, 58, 0.5),
-  rgba(47, 48, 58, 0.5)),
-   url(../image/work-proces.jpg);
+  background-image: linear-gradient(to left, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)),
+    url(../image/work-proces.jpg);
 
   text-align: center;
   background-position: center;
@@ -260,10 +259,27 @@ div.container-header {
   color: var(--body-text-color);
   background-color: var(--background-botton-color);
 }
-/* -------------------------------------Що ми робимо index + porfolio */
+/* -------------------Що ми робимо index + porfolio */
 
 .what-we-do {
   display: flex;
+}
+.we-do-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+
+  width: 240px;
+  height: 120px;
+
+  fill: var(--body-text-color);
+  background-color: var(--back-svg-color);
+}
+.svg-we-do {
+  width: 70px;
+  height: 70px;
 }
 .item {
   width: calc((100%-90px) / 4);
@@ -290,7 +306,7 @@ div.container-header {
   height: 0;
 }
 
-/* ------------------------------------------фото робочого процесу */
+/* ---------------------------------------фото робочого процесу */
 .section-semples {
   padding-top: 0;
 }
@@ -313,7 +329,7 @@ div.container-header {
   font-weight: 700;
 }
 
-/* -------------------------------------------Наша команда */
+/* ----------------------------------------Наша команда */
 .team-list {
   display: flex;
   flex-wrap: wrap;
@@ -323,7 +339,7 @@ div.container-header {
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
   border-radius: 0px 0px 4px 4px;
-
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-color: var(--white-color);
 }
 .person:nth-child(4n) {
@@ -331,7 +347,7 @@ div.container-header {
 }
 .person-info {
   margin-top: 30px;
-  margin -bottom: 30px;
+  margin-bottom: 30px;
 }
 .team {
   background: #f5f4fa;
@@ -353,23 +369,75 @@ div.container-header {
   font-size: 16px;
   line-height: 1.18;
 }
-/* ---------------------OUR CLIENTS */
-.clients-list{
+.person-icon-list {
   display: flex;
   flex-direction: row;
- 
+  margin-bottom: 30px;
+  margin-right: 32px;
+  margin-left: 32px;
+  margin-top: 16px;
 }
-.clients-item{
- 
+.person-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-clients);
 }
-.clients-icon-1{
+.person-icon:hover,
+.person-icon:focus {
+  cursor: pointer;
+  fill: var(--white-color);
+}
+.peson-list-items {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 50%;
+}
+.peson-list-items:not(:first-child) {
+  margin-left: 32px;
+}
+.peson-list-items:hover,
+.peson-list-items:focus {
+  background-color: var(--background-botton-color);
+  fill: var(--white-color);
+}
+
+/* ---------------------OUR CLIENTS */
+.clients-list {
+  display: flex;
+  flex-direction: row;
+}
+.clients-item {
+  display: block;
+  text-align: center;
+
+  padding-top: 16px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+
   width: 170px;
   height: 92px;
+}
+.clients-icon {
+  width: 106px;
+  height: 60px;
   padding-left: 0;
   padding-right: 0;
+  fill: var(--icon-clients);
+}
+.clients-item:not(:first-child) {
+  margin-left: 30px;
+}
+.clients-item:hover,
+.clients-item:focus {
+  border: 1px solid var(--background-botton-color);
+}
+.clients-icon:hover,
+.clients-icon:focus {
+  fill: var(--background-botton-color);
 }
 /* -----------------------------------Portfolio main */
-/* Кнопки на сторінці Portfolio */
 .botton-portfolio {
   display: flex;
   justify-content: center;
@@ -428,6 +496,11 @@ div.container-header {
   background-color: var(--background-botton-color);
 }
 /* ---------------------------------------------ВСЕ ДЛЯ ФУТЕРА */
+.container-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
 .footer {
   display: block;
   margin-bottom: 9px;
@@ -442,6 +515,23 @@ div.container-header {
   display: block;
 
   margin-bottom: 20px;
+}
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+.footer-join {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-left: 35px;
+
+  color: var(--white-color);
 }
 .footer-color {
   color: var(--white-color);
