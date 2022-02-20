@@ -607,7 +607,7 @@ div.container-header {
 .person-icon-futer {
   width: 20px;
   height: 20px;
-  fill: var(--icon-clients);
+  fill: var(--white-color);
 }
 .person-icon-futer:hover,
 .person-icon-futer:active {
