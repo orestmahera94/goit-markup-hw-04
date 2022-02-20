@@ -167,6 +167,16 @@ div.container-header {
   color: var(--background-botton-color);
   cursor: pointer;
 }
+.header-color-contacts:hover .header-icon-phone,
+.header-color-contacts:focus .header-icon-phone {
+  fill: var(--background-botton-color);
+  cursor: pointer;
+}
+.header-color-contacts:hover .header-mail,
+.header-color-contacts:focus .header-mail {
+  fill: var(--background-botton-color);
+  cursor: pointer;
+}
 
 .heder-contacts {
   display: flex;
@@ -174,32 +184,16 @@ div.container-header {
   justify-content: center;
 }
 
-.heder-contacts:hover,
-.heder-contacts:active {
-  fill: var(--background-botton-color);
-  cursor: pointer;
-}
 .header-mail {
   width: 20px;
   height: 20px;
   fill: var(--image-text-color);
 }
 
-.header-mail:hover,
-.header-mail:focus {
-  fill: var(--background-botton-color);
-  cursor: pointer;
-}
-
 .header-icon-phone {
   width: 20px;
   height: 20px;
   fill: var(--image-text-color);
-}
-.header-icon-phone:hover,
-.header-icon-phone:active {
-  fill: var(--background-botton-color);
-  cursor: pointer;
 }
 
 .header-nomber {
@@ -436,7 +430,7 @@ div.container-header {
 .person-icon {
   width: 20px;
   height: 20px;
-  fill: var(--white-color);
+  fill: var(--icon-clients);
 }
 
 .person-icon:hover,
@@ -445,7 +439,7 @@ div.container-header {
   fill: var(--white-color);
 }
 
-.peson-list-items {
+.person-list-items {
   display: flex;
   justify-content: center;
 
@@ -454,15 +448,14 @@ div.container-header {
   border-radius: 50%;
 }
 
-.peson-list-items:not(:first-child) {
+.person-list-items:not(:first-child) {
   margin-left: 10px;
 }
-.peson-list-items:hover,
-.peson-list-items:focus {
+.person-list-items:hover,
+.person-list-items:focus {
   background-color: var(--background-botton-color);
   fill: var(--white-color);
 }
-
 .person-link {
   display: flex;
   justify-content: center;
@@ -481,6 +474,13 @@ div.container-header {
   width: 100%;
   height: 100%;
 }
+
+.person-icon-1:hover .person-icon,
+.person-icon-1:focus .person-icon {
+  background-color: var(--background-botton-color);
+  fill: var(--white-color);
+  cursor: pointer;
+}
 /* --------------------------OUR CLIENTS */
 .clients-list {
   display: flex;
@@ -496,6 +496,7 @@ div.container-header {
   display: flex;
   justify-content: center;
   align-items: center;
+
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
@@ -503,9 +504,10 @@ div.container-header {
   width: 170px;
   height: 92px;
 }
-.clients-link:hover,
-.clients-link:focus {
-  border: 1px solid var(--background-botton-color);
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--background-botton-color);
+
   box-sizing: border-box;
   border-radius: 4px;
 }
