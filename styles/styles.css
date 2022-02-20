@@ -7,6 +7,7 @@
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --icon-clients: rgba(175, 177, 184, 1);
   --back-svg-color: #f5f4fa;
+  --text-on-image: rgba(47, 48, 58, 0.8);
 }
 
 body {
@@ -19,12 +20,15 @@ body {
 li {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
 }
+
 img {
   display: block;
 }
+
 h1,
 h2,
 h3,
@@ -36,13 +40,16 @@ nav {
   padding: 0;
   border: 0;
 }
+
 header {
   border-bottom: 1px solid #ececec;
 }
+
 footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -50,32 +57,30 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+
 div.container-header {
   display: flex;
   align-items: center;
 }
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-/* --------------------------------------------- ХЕДЕР---- */
-.store-active {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+/* ------------------------------- ХЕДЕР---- */
 
-  color: var(--background-botton-color);
-}
 .header {
   height: 80px;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.15;
 }
+
 .headear-portfolio {
   border: 1px solid #ececec;
 }
+
 .logo {
   font-size: 26px;
   line-height: 1.2;
@@ -83,6 +88,7 @@ div.container-header {
   color: var(--body-text-color);
   font-family: Raleway;
 }
+
 .all-logo {
   margin-left: 0px;
   margin-right: 93px;
@@ -93,16 +99,27 @@ div.container-header {
   line-height: 1.2;
   font-weight: 700;
 }
+
 .color-logo {
   color: var(--background-botton-color);
   font-family: Raleway;
 }
+
 .menu {
   display: flex;
 }
+.store-active {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--background-botton-color);
+}
+
 .menu li.header + li.header {
   margin-left: 50px;
 }
+
 .menu-color {
   display: block;
   padding-top: 32px;
@@ -110,27 +127,34 @@ div.container-header {
 
   color: var(--body-text-color);
 }
+
 .menu-color:hover,
 .menu-color:focus {
   color: var(--background-botton-color);
-  -background-botton-color: var(--white-color);
+  background-color: var(--white-color);
+  transition-delay: 250ms;
 }
+
 .adress-header {
   display: flex;
   flex-direction: row;
   margin-left: auto;
 }
+
 .adress-header li.header + li.header {
   margin-left: 50px;
 }
+
 .contacts {
   color: var(--footer-contacts-color);
 }
+
 .contacts:hover,
 .contacts:focus {
   color: var(--background-botton-color);
   cursor: pointer;
 }
+
 .header-color-contacts {
   display: flex;
   padding-top: 32px;
@@ -138,19 +162,17 @@ div.container-header {
   align-items: center;
   color: #757575;
 }
+
+.header-color-contacts:hover,
+.header-color-contacts:focus {
+  color: var(--background-botton-color);
+  cursor: pointer;
+}
+
 .heder-contacts {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-.header-mail {
-  width: 20px;
-  height: 20px;
-}
-.header-mail:hover,
-.header-mail:focus {
-  fill: var(--background-botton-color);
-  cursor: pointer;
 }
 
 .heder-contacts:hover,
@@ -158,29 +180,34 @@ div.container-header {
   fill: var(--background-botton-color);
   cursor: pointer;
 }
+.header-mail {
+  width: 20px;
+  height: 20px;
+  fill: var(--image-text-color);
+}
+
+.header-mail:hover,
+.header-mail:focus {
+  fill: var(--background-botton-color);
+  cursor: pointer;
+}
 
 .header-icon-phone {
   width: 20px;
   height: 20px;
-  margin-left: 0px;
-  padding-left: 0px;
+  fill: var(--image-text-color);
 }
+.header-icon-phone:hover,
+.header-icon-phone:active {
+  fill: var(--background-botton-color);
+  cursor: pointer;
+}
+
 .header-nomber {
   margin-left: 10px;
 }
-.header-icon-phone:hover {
-  color: var(--background-botton-color);
-  cursor: pointer;
-}
-.header-color-contacts:hover {
-  color: var(--background-botton-color);
-  cursor: pointer;
-}
-.header-color-contacts:focus {
-  color: var(--background-botton-color);
-  cursor: pointer;
-}
-/*------------------------- Меню для сторінки ПОРТФОЛІО */
+
+/*-------------------------------------- Меню  ПОРТФОЛІО */
 
 .menu-portfolio {
   padding-left: 22px;
@@ -196,13 +223,14 @@ div.container-header {
   font-weight: 500;
   background-color: #f5f4fa;
 }
+
 .menu-portfolio:hover,
 .menu-portfolio:focus {
   color: var(--white-color);
   background-color: var(--background-botton-color);
 }
 
-/*---------------------------------------- СЕКЦІЯ ГЕРОЙ */
+/*-------------------------------------- СЕКЦІЯ ГЕРОЙ */
 .hero {
   background-image: linear-gradient(to left, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)),
     url(../image/work-proces.jpg);
@@ -211,13 +239,16 @@ div.container-header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 1600px;
 
   color: var(--white-color);
 }
+
 .hero.section {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
 .h1 {
   margin-left: auto;
   margin-right: auto;
@@ -254,16 +285,20 @@ div.container-header {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+
 .index-bottom:hover,
 .index-bottom:focus {
   color: var(--body-text-color);
   background-color: var(--background-botton-color);
 }
-/* -------------------Що ми робимо index + porfolio */
+/* -----------MODAL WINDOW */
+
+/* --------------------------Що ми робимо index + porfolio */
 
 .what-we-do {
   display: flex;
 }
+
 .we-do-items {
   display: flex;
   justify-content: center;
@@ -277,23 +312,28 @@ div.container-header {
   fill: var(--body-text-color);
   background-color: var(--back-svg-color);
 }
+
 .svg-we-do {
   width: 70px;
   height: 70px;
 }
+
 .item {
   width: calc((100%-90px) / 4);
   margin-right: 30px;
 }
+
 .item:nth-child(4n) {
   margin-right: 0;
 }
+
 .index-smoll-text {
   color: var(--image-text-color);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+
 .title-h3 {
   font-weight: 700;
   font-size: 14px;
@@ -301,25 +341,31 @@ div.container-header {
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
+
 .our-work {
   visibility: hidden;
   height: 0;
 }
 
-/* ---------------------------------------фото робочого процесу */
-.section-semples {
+/* -----------------------------фото робочого процесу */
+.section-exemples {
   padding-top: 0;
 }
+
 .photo-work-proces {
   display: flex;
   flex-wrap: wrap;
 }
+
 .photo-item {
+  position: relative;
   margin-right: 30px;
 }
+
 .photo-item:nth-child(3n) {
   margin-right: 0;
 }
+
 .title-h2 {
   margin-bottom: 50px;
 
@@ -329,11 +375,12 @@ div.container-header {
   font-weight: 700;
 }
 
-/* ----------------------------------------Наша команда */
+/* ------------------------------------Наша команда */
 .team-list {
   display: flex;
   flex-wrap: wrap;
 }
+
 .person {
   display: block;
   width: calc((100% - 90px) / 4);
@@ -342,26 +389,35 @@ div.container-header {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-color: var(--white-color);
 }
+
 .person:nth-child(4n) {
   margin-right: 0;
 }
+
 .person-info {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
+
 .team {
   background: #f5f4fa;
 }
+
 .image-class {
   width: 100%;
 }
+
 .name-workers {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   text-align: center;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
 }
+
 .profession-worker {
   text-align: center;
 
@@ -369,32 +425,38 @@ div.container-header {
   font-size: 16px;
   line-height: 1.18;
 }
+
 .person-icon-list {
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
-  margin-right: 32px;
-  margin-left: 32px;
+
+  justify-content: center;
   margin-top: 16px;
 }
+
 .person-icon {
   width: 20px;
   height: 20px;
-  fill: var(--icon-clients);
+  fill: var(--white-color);
 }
+
 .person-icon:hover,
 .person-icon:focus {
   cursor: pointer;
   fill: var(--white-color);
 }
+
 .peson-list-items {
-  padding-top: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
+  display: flex;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
 }
+
 .peson-list-items:not(:first-child) {
-  margin-left: 32px;
+  margin-left: 10px;
 }
 .peson-list-items:hover,
 .peson-list-items:focus {
@@ -402,16 +464,39 @@ div.container-header {
   fill: var(--white-color);
 }
 
-/* ---------------------OUR CLIENTS */
+.person-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.person-icon-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+/* --------------------------OUR CLIENTS */
 .clients-list {
   display: flex;
   flex-direction: row;
 }
-.clients-item {
-  display: block;
-  text-align: center;
 
-  padding-top: 16px;
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
@@ -419,33 +504,44 @@ div.container-header {
   width: 170px;
   height: 92px;
 }
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--background-botton-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
 .clients-icon {
   width: 106px;
   height: 60px;
-  padding-left: 0;
-  padding-right: 0;
+
   fill: var(--icon-clients);
 }
-.clients-item:not(:first-child) {
-  margin-left: 30px;
-}
-.clients-item:hover,
-.clients-item:focus {
-  border: 1px solid var(--background-botton-color);
-}
+
 .clients-icon:hover,
 .clients-icon:focus {
   fill: var(--background-botton-color);
 }
-/* -----------------------------------Portfolio main */
+
+.clients-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  border: 1px solid var(--background-botton-color);
+}
+
+/* -------------------------------Portfolio main */
 .botton-portfolio {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
+
 .list-botton-portfolio {
   margin-right: 8px;
 }
+
 .list-botton-portfolio:last-child {
   margin-right: 0;
 }
@@ -454,17 +550,26 @@ div.container-header {
   display: flex;
   flex-wrap: wrap;
 }
+
 .our-progects-item {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
+
 .our-progects-item:nth-child(3n) {
   margin-right: 0px;
 }
+
 .our-progects-item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
+.our-progects-item:hover,
+.our-progects-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .name-progect {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -474,9 +579,11 @@ div.container-header {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
+
 .image-portfolio {
   width: 100%;
 }
+
 .big-text-image {
   display: block;
   margin-bottom: 4px;
@@ -485,22 +592,35 @@ div.container-header {
   line-height: 2;
   font-weight: 700;
 }
+
 .small-text-image {
   display: block;
   color: var(--image-text-color);
   font-size: 16px;
   line-height: 1.8;
 }
+
 .active-botton {
   color: var(--white-color);
   background-color: var(--background-botton-color);
 }
-/* ---------------------------------------------ВСЕ ДЛЯ ФУТЕРА */
+.person-icon-futer {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-clients);
+}
+.person-icon-futer:hover,
+.person-icon-futer:active {
+  fill: var(--white-color);
+}
+/* ---------------------------------------- ФУТЕР */
+
 .container-footer {
   display: flex;
   flex-direction: row;
   align-items: baseline;
 }
+
 .footer {
   display: block;
   margin-bottom: 9px;
@@ -508,19 +628,23 @@ div.container-header {
   line-height: 1.7;
   font-style: normal;
 }
+
 .footer:last-child {
   margin: 0;
 }
+
 .footer-logo {
   display: block;
 
   margin-bottom: 20px;
 }
+
 .footer-social {
   display: flex;
   flex-direction: column;
   margin-left: 70px;
 }
+
 .footer-join {
   font-family: Roboto;
   font-weight: 700;
@@ -529,20 +653,23 @@ div.container-header {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-left: 35px;
 
   color: var(--white-color);
 }
+
 .footer-color {
   color: var(--white-color);
 }
+
 .footer-color:hover,
 .footer-color:focus {
   color: var(--background-botton-color);
 }
+
 .footer-background-color {
   background-color: var(--footer-background-color);
 }
+
 .back-color {
   background-color: var(--background-botton-color);
 }
