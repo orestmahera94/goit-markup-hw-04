@@ -244,6 +244,8 @@ div.container-header {
 .hero.section {
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .h1 {
@@ -303,8 +305,6 @@ div.container-header {
   justify-content: center;
   align-items: center;
 
-  margin-bottom: 30px;
-
   width: 240px;
   height: 120px;
 
@@ -334,11 +334,13 @@ div.container-header {
 }
 
 .title-h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  margin-bottom: 10px;
 }
 
 .our-work {
@@ -524,17 +526,12 @@ div.container-header {
   fill: var(--icon-clients);
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
-  fill: var(--background-botton-color);
-}
-
 .clients-item:not(:first-child) {
   margin-left: 30px;
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-item:hover .clients-link,
+.clients-item:focus .clients-link {
   border: 1px solid var(--background-botton-color);
 }
 
@@ -571,8 +568,17 @@ div.container-header {
 .our-progects-item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
-.our-progects-item:hover,
-.our-progects-item:focus {
+.our-progects-link {
+  display: block;
+  width: 370px;
+  height: 404px;
+  color: var(--body-text-color);
+}
+.our-progects-link:hover,
+.our-progects-link:focus {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -598,6 +604,8 @@ div.container-header {
   font-size: 18px;
   line-height: 2;
   font-weight: 700;
+
+  color: var(--body-text-color);
 }
 
 .small-text-image {
